@@ -15,11 +15,13 @@ body {
     position: fixed;
     bottom: 20%;
     left: 40%;
+    user-select: none;
 }
 
 
 .waterdrop {
     width: 20px;
+    position: absolute;
 }
 
 #net {
