@@ -36,7 +36,7 @@ body {
 .apple {
     height: 50px;
     width: auto;
-    position: absolute;
+    /* position: absolute; */
     z-index: 10;
 }
 
