@@ -4,6 +4,12 @@ var wateringCan = $("#wateringcan");
 var tilted = false;
 var waterdrops = $(".waterdrop");
 
+waterdrops.each(function(){
+    $(this).css({
+        visibility: 'hidden'
+    });
+});
+
 
 wateringCan.click(function () {
     if(!tilted){
