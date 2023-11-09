@@ -3,6 +3,7 @@
 var wateringCan = $("#wateringcan");
 var tilted = false;
 var waterdrops = $(".waterdrop");
+var screenheight = $(window).height();
 
 waterdrops.each(function(){
     $(this).css({
@@ -45,7 +46,7 @@ function pour(object){
     var startV = wateringCan.position().top + Math.random() * 20 + 50;
     var startH = wateringCan.position().left + Math.random() * 20 - 10;
     var speed = Math.random() * 1200 + 800;
-    var endV = 1000;
+    var endV = screenheight + 100;
 
     object.css({
         top: startV + 'px',
