@@ -138,6 +138,6 @@ function moveSunOrMoon(){
 
     setTimeout(function(){ //swapping the day/night variable and calling the function again
         day = !day;
-        moveSun();
+        moveSunOrMoon();
     }, transitionDuration);
 }
