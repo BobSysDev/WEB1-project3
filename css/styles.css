@@ -16,19 +16,21 @@ body {
     bottom: 20%;
     left: 40%;
     user-select: none;
+    z-index: 3;
 }
 
 
 .waterdrop {
     width: 20px;
     position: absolute;
+    z-index: 3;
 }
 
 #net {
     height: 600px;
     width: auto;
     position: absolute;
-z-index: 9999999999;
+    z-index: 2;
 }
 
 .apple {
