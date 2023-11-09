@@ -67,3 +67,21 @@ body {
     background-position: bottom;
     overflow: hidden;
 }
+
+#sun{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: -1;
+    width: 240px;
+    height: auto;
+}
+
+#moon{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: -1;
+    width: 240px;
+    height: auto;
+}
