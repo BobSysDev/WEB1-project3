@@ -15,22 +15,28 @@ body {
 	position: fixed;
 	bottom: 20%;
 	left: 40%;
+	user-select: none;
+	z-index: 3;
 }
 
 .waterdrop {
 	width: 20px;
+	position: absolute;
+	z-index: 3;
 }
 
 #net {
 	height: 600px;
 	width: auto;
 	position: absolute;
+	z-index: 2;
 }
 
 .apple {
 	height: 50px;
 	width: auto;
-	position: absolute;
+	/* position: absolute; */
+	z-index: 10;
 }
 
 #tree {
@@ -44,6 +50,11 @@ body {
 	position: fixed;
 	bottom: 20px;
 	left: 20%;
+	z-index: 0;
+}
+
+#basketfront {
+	z-index: 999;
 }
 
 body {
@@ -53,4 +64,22 @@ body {
 	background-repeat: repeat-x;
 	background-position: bottom;
 	overflow: hidden;
+}
+
+#sun {
+	position: fixed;
+	top: 20px;
+	left: 20px;
+	z-index: -1;
+	width: 240px;
+	height: auto;
+}
+
+#moon {
+	position: fixed;
+	top: 20px;
+	left: 20px;
+	z-index: -1;
+	width: 240px;
+	height: auto;
 }
