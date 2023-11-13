@@ -1,31 +1,29 @@
-#cloud-container {
-	position: relative;
-	width: 100%;
-	height: 100%;
-}
-
 .cloud {
 	position: absolute;
 	z-index: -1;
+	width: auto;
 }
 
-/* Move the clouds to different positions */
-.cloud-1 {
-	left: 0;
-	top: 0;
+#cloud1 {
+	top: 10px;
+	left: -520px;
+	width: 520px;
 }
 
-.cloud-2 {
-	left: 0;
-	top: 100px;
+#cloud2 {
+	top: 220px;
+	left: -350px;
+	width: 350px;
 }
 
-.cloud-3 {
-	left: 0;
-	top: 200px;
+#cloud3 {
+	top: 400px;
+	left: -380px;
+	width: 380px;
 }
 
-.cloud-4 {
-	left: 0;
-	top: 50px;
+#cloud4 {
+	top: 500px;
+	left: -500px;
+	width: 500px;
 }

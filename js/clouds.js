@@ -1,36 +1,35 @@
-// jQuery
 $(document).ready(function () {
-	// Get the clouds
-	var clouds = $(".cloud");
+	function animateClouds() {
+		// position of each cloud
+		var cloud1Left = $("#cloud1").position().left;
+		var cloud2Left = $("#cloud2").position().left;
+		var cloud3Left = $("#cloud3").position().left;
+		var cloud4Left = $("#cloud4").position().left;
 
-	// Move the clouds
-	function moveClouds() {
-		// Get the current position of each cloud
-		var cloudPositions = [];
-		for (var i = 0; i < clouds.length; i++) {
-			cloudPositions[i] = $(clouds[i]).offset();
+		// move the clouds to the right
+		$("#cloud1").css("left", cloud1Left + 0.5);
+		$("#cloud2").css("left", cloud2Left + 1.1);
+		$("#cloud3").css("left", cloud3Left + 0.7);
+		$("#cloud4").css("left", cloud4Left + 0.9);
+
+		// loop the clouds when they reach end of the screen
+		if (cloud1Left > $(window).width()) {
+			$("#cloud1").css("left", -520);
+		}
+		if (cloud2Left > $(window).width()) {
+			$("#cloud2").css("left", -350);
+		}
+		if (cloud3Left > $(window).width()) {
+			$("#cloud3").css("left", -380);
+		}
+		if (cloud4Left > $(window).width()) {
+			$("#cloud4").css("left", -500);
 		}
 
-		// Move each cloud at a different speed
-		for (var i = 0; i < clouds.length; i++) {
-			var speed = i + 1;
-			cloudPositions[i].left += speed;
-
-			// If a cloud reaches the edge of the screen, move it back to the beginning
-			if (cloudPositions[i].left > $(window).width()) {
-				cloudPositions[i].left = 0;
-			}
-		}
-
-		// Set the new position of each cloud
-		for (var i = 0; i < clouds.length; i++) {
-			$(clouds[i]).offset(cloudPositions[i]);
-		}
-
-		// Request the next animation frame
-		requestAnimationFrame(moveClouds);
+		requestAnimationFrame(function () {
+			animateClouds();
+		});
 	}
 
-	// Start the animation
-	moveClouds();
+	animateClouds();
 });
