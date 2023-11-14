@@ -1,0 +1,29 @@
+.cloud {
+	position: absolute;
+	z-index: 0;
+	width: auto;
+}
+
+#cloud1 {
+	top: 10px;
+	left: -520px;
+	width: 520px;
+}
+
+#cloud2 {
+	top: 220px;
+	left: -350px;
+	width: 350px;
+}
+
+#cloud3 {
+	top: 400px;
+	left: -380px;
+	width: 380px;
+}
+
+#cloud4 {
+	top: 480px;
+	left: -500px;
+	width: 500px;
+}
