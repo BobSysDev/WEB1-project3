@@ -1,3 +1,6 @@
+// code by Karolina Krysiak
+
+//make the clouds fly across the screen
 $(document).ready(function () {
 	function animateClouds() {
 		// position of each cloud
