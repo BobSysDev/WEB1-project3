@@ -84,11 +84,12 @@ body {
 	height: auto;
 }
 
-#rain {
-		position: absolute;
-		width: 20px; 
-		height: 20px; 
-		background-image: url(''); 
-		background-size: cover;
-		z-index: 9999;
-	  }
+.raindrop {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	background-image: url('../images/drop.png');
+	background-size: contain;
+	z-index: 9999;
+	overflow: hidden;
+  }
