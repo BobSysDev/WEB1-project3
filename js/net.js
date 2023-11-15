@@ -1,3 +1,5 @@
+//This javaScript was made by Marius Gafton #343889
+
 $(document).ready(function() {
   var scale = 0.5;
   var distanceFactor = 2; 

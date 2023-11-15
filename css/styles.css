@@ -83,3 +83,26 @@ body {
 	width: 240px;
 	height: auto;
 }
+
+#garden {
+    position: relative;
+    width: 100%;
+    height: 400px; 
+    background-color: #b7e3cb; 
+}
+
+#flowers-container {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.flower {
+    width: 80px; 
+    height: 100px; 
+    transition: transform 0.5s ease; 
+	margin: 0 50px;
+	z-index: 999;
+}
