@@ -84,21 +84,9 @@ body {
 	height: auto;
 }
 
-.raindrop {
-    position: absolute;
-    width: 1px;
-    height: 15px;
-    background-color: #00f; /* Raindrop color */
-    opacity: 0.6;
-    animation: fall 1s linear infinite; /* Animation for raindrop falling */
-}
-
-/* Animation for raindrop falling */
-@keyframes fall {
-    0% {
-        transform: translateY(-50px); /* Start position above the garden */
-    }
-    100% {
-        transform: translateY(100%); /* End position at the bottom of the garden */
-    }
-}
+#rain {
+	position: absolute;
+	width: 1px;
+	height: 80px;
+	background: blue;
+  }

@@ -1,23 +1,24 @@
 $(document).ready(function() {
     function createRaindrop() {
-        var raindrop = $('<div class="raindrop"></div>');
-
-        // Set random position within the width of the garden
-        var posX = Math.random() * $('.garden').width();
-        
-        raindrop.css({
-            left: posX,
-        });
-
-        $('.rain').append(raindrop);
-
-        raindrop.animate({
-            top: '100%' /* End position at the bottom of the garden */
-        }, 3000, 'linear', function() {
-            $(this).remove();
-        });
+      const raindrop = $('<div class="rain"></div>').css({
+        left: Math.random() * $(window).width(),
+        top: -100,
+        opacity: Math.random() + 0.5,
+        transform: 'rotate(' + Math.random() * 360 + 'deg)'
+      });
+      $('body').append(raindrop);
+      
+      raindrop.animate({
+        top: $(window).height() + 100,
+        left: '+=20'
+      }, Math.random() * 2000 + 1500, 'linear', function() {
+        $(this).remove();
+        createRaindrop();
+      });
     }
-
-    // Create raindrops at intervals for continuous rain
-    setInterval(createRaindrop, 200); // Adjust timing for raindrop creation
-});
+  
+    // Create multiple raindrops
+    for (let i = 0; i < 30; i++) {
+      createRaindrop();
+    }
+  });
