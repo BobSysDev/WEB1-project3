@@ -85,8 +85,10 @@ body {
 }
 
 #rain {
-	position: absolute;
-	width: 1px;
-	height: 80px;
-	background: blue;
-  }
+		position: absolute;
+		width: 20px; 
+		height: 20px; 
+		background-image: url(''); 
+		background-size: cover;
+		z-index: 9999;
+	  }
