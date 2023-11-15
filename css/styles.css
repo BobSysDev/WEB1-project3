@@ -83,3 +83,20 @@ body {
 	width: 240px;
 	height: auto;
 }
+
+.rain {
+    position: absolute;
+    width: 1px; /* Adjust size as needed */
+    height: 100%; /* Adjust height to cover the garden */
+    background: linear-gradient(90deg, rgba(0, 0, 255, 0.5), rgba(0, 0, 255, 0)); /* Raindrop color */
+    animation: rainAnimation 1s linear infinite; /* Animation */
+}
+
+@keyframes rainAnimation {
+    0% {
+        transform: translateY(-50px); /* Start position */
+    }
+    100% {
+        transform: translateY(100%); /* End position */
+    }
+}
