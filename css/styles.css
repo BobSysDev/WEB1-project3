@@ -91,4 +91,5 @@ body {
 	background-image: url('../images/drop.png');
 	background-size: cover;
 	z-index: 9999;
+	top: 100vh; 
   }

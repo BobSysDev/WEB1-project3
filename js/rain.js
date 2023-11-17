@@ -1,8 +1,9 @@
+//Code written by Marius Gafton
 $(document).ready(function() {
   function createRaindrop() {
     const raindrop = $('<div class="raindrop"></div>').css({
       left: Math.random() * ($(window).width() - 20),
-      top: -3000, // Adjusted initial top position to start above the viewport
+      top: -3000, 
       opacity: Math.random() + 0.5,
     });
     $('body').append(raindrop);
@@ -17,7 +18,7 @@ $(document).ready(function() {
     setTimeout(createRaindrop, Math.random() * 1000 + 500);
   }
 
-  for (let i = 0; i < 15; i++) {
+  for (let i = 0; i < 20; i++) {
     createRaindrop();
   }
 });
