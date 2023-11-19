@@ -125,25 +125,25 @@ body {
 }
 
 #cloud1 {
-	top: 10px;
+	top: 2%;
 	left: -520px;
 	width: 520px;
 }
 
 #cloud2 {
-	top: 220px;
+	top: 25%;
 	left: -350px;
 	width: 350px;
 }
 
 #cloud3 {
-	top: 400px;
+	top: 40%;
 	left: -380px;
 	width: 380px;
 }
 
 #cloud4 {
-	top: 480px;
+	top: 50%;
 	left: -500px;
 	width: 500px;
 }
